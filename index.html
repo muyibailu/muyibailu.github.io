@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh">
+			
+	<head>
+		<meta charset="utf-8">
+		<title>在线图片编辑器（半仿照创客贴）</title>
+		<style>
+			<!--
+			*{align-content: center;font-family:KaiTi}/*全局设置*//*background-color: #DADADA*/
+			/*.flex-container {display: -webkit-flex;
+								display: flex;
+								width: 400px;
+								height: 250px;
+								background-color: lightgrey;}
+
+			.flex-item {background-color:aqua;
+							width: 100px;
+							height: 100px;
+							margin: 10px;}*/
+			
+			/*总体框架布局*/
+			div.container{width:1000px;
+							margin:0px;
+							border:1px solid gray;
+							line-height:150%;
+							}
+			div.header{padding:0.5em;
+						color:black;
+						border-bottom: 1px solid gray;
+						clear:left;
+						}
+			div.footer{padding:0.5em;
+						color:white;
+						background-color:gray;
+						clear:left;
+						}
+			
+			div.left{
+					float:left;
+					width:160px;
+					margin:0;
+					
+					padding:1em;
+					}
+			div.content{
+						margin-left:190px;
+						padding:1em;
+						border-left:1px solid gray;
+						}
+			
+			/*右边布局*/
+			.flex-container {display: -webkit-flex;
+								display: flex;
+								width: 100%;
+								height: 100%;
+								background-color: lightgrey;
+								}/*右边布局的flex-container*/
+			.flex-item {background-color:#FDF6F6;
+							width:20%;
+							height: 10%;
+							margin: 4px;
+							border: 1px #688DDB solid 
+							}/*右边布局的flex-item*/
+			/*img{width: 100%}*/
+			img {border: 1px solid #ddd;
+					border-radius: 4px;
+					padding: 5px;
+					width: 92%;
+					vertical-align:middle;
+					background-color: #F9EAEA
+					}
+			img:hover {border: 1px solid #688DDB;
+										}
+			.PW{text-align: center}/*PW为picture word的缩写*/
+			
+			/*左边布局*/
+			ul.tool {list-style-type: none;
+					margin: 0;
+					padding: 0;
+					width: 95%;
+					}/*注释掉背景色background-color: #f1f1f1;*/
+
+			li.icon {display: block;
+					color: #000;
+					padding: 8px 16px;
+					text-decoration: none;
+					font-size:19px
+					}
+
+				/* 当鼠标移动到选项上可以修改背景颜色 */
+			li.icon:hover {background-color:#E4DBDB;
+							color: blue;
+							}
+			p{font-size: 80%}
+			/*.flex-tool {background-color: cornflowerblue;
+							width: 95%;
+							margin: 10px;
+							}
+			.flex-icon {background-color: cornflowerblue;
+							width: 95%;
+							margin: 10px;
+							}*/
+			.flex-headerContainer {
+									display: -webkit-flex;
+									display: flex;
+									width: 100%;
+									height: 10%;
+									
+									}
+			.flex-website {
+							
+							width: 100%;
+							margin: 2px;
+							}
+			.flex-mainMenu {
+							
+							width: 70%;
+							margin: 21px;
+							}
+			a{text-decoration:none;text-decoration-color:#050505}/*设置超链接*/
+			ul{list-style-type:none;margin:0;padding-right:100px;text-align: center;font-size:20px}/*第一个设置标记，默认为实心点*/
+			li{display: inline}
+			-->
+		</style>
+	
+	
+	</head>
+	
+	<body>
+		
+		<div class="container">
+		<!--<div class="flex-container">-->
+		<!--<div class="flex-item">-->
+		
+		<div class="header">
+		<div class="flex-headerContainer">
+		
+			<section>
+			<div class="flex-website"> 
+		<article><header>
+			 
+			<h2>&nbsp;&nbsp;创客贴
+			</h2><!--这里怎全局属性规定不到？&nbsp;&nbsp;-->
+			
+		</header></article>
+			</div></section>
+			
+		
+			
+		<!--<div class="flex-item">-->
+		<div class="flex-mainMenu">
+		<ul>
+			
+			<li><a href="https://www.chuangkit.com/designtools/startdesign">主页</a>
+			</li>
+			<li><a href="https://www.chuangkit.com/designtools/startdesign">课程中心</a>
+			</li>
+			<li><a href="https://www.chuangkit.com/designtools/startdesign">个人VIP</a>
+			</li>
+			<li><a href="https://www.chuangkit.com/designtools/startdesign">企业VIP</a>
+			</li>
+			<li><a href="https://www.chuangkit.com/designtools/startdesign">客户端</a>
+			</li>
+			<li><a href="https://www.chuangkit.com/designtools/startdesign">创意服务</a>
+			</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		
+		<div class="left">
+			<!--<div class="flex-tool">-->
+			
+			<ul class="tool"><!--第一部分-->
+				<li class="icon">推荐</li>
+				<li class="icon">我的设计</li>
+			</ul>
+			
+			<p>&nbsp;&nbsp;&nbsp;我的团队</p>
+			<ul class="tool"><!--第二部分-->
+				<li class="icon">创建团队</li>
+			</ul>
+			
+			<p>&nbsp;&nbsp;&nbsp;在线设计</p>
+			<ul class="tool"><!--第三部分-->
+				<li class="icon">创建设计</li>
+				<li class="icon">一键抠图</li>
+				<li class="icon">平面设计</li>
+				<li class="icon">视频制作</li>
+			</ul>
+			<!--</div>-->
+			
+		</div>
+		
+		<div class="content">
+			<div class="flex-container">
+				
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+				<div class="flex-item"><a href="1.png"><img src="2.jpg" alt="图片"></a><p class="PW">点击图片都是相对路径</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+				<p>文档创作者：向河松
+				</p>
+				<p>图片来源：网络
+				</p>
+				<p>绝对链接源为网站：chaung'ke'tie 地址；https://www.chuangkit.com/designtools/startdesign
+				</p>
+		</div>
+		
+		
+		
+		</div>
+		
+	</body>
+</html>
